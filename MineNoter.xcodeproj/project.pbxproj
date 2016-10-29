@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7740757B1DC4F6D900AB679F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740757A1DC4F6D900AB679F /* AppDelegate.swift */; };
+		7740757D1DC4F6D900AB679F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740757C1DC4F6D900AB679F /* MasterViewController.swift */; };
+		7740757F1DC4F6D900AB679F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740757E1DC4F6D900AB679F /* DetailViewController.swift */; };
+		774075821DC4F6D900AB679F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774075801DC4F6D900AB679F /* Main.storyboard */; };
+		774075841DC4F6D900AB679F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774075831DC4F6D900AB679F /* Assets.xcassets */; };
+		774075871DC4F6D900AB679F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774075851DC4F6D900AB679F /* LaunchScreen.storyboard */; };
+		774075921DC4F6D900AB679F /* MineNoterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774075911DC4F6D900AB679F /* MineNoterTests.swift */; };
+		7740759D1DC4F6D900AB679F /* MineNoterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740759C1DC4F6D900AB679F /* MineNoterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7740758E1DC4F6D900AB679F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7740756F1DC4F6D800AB679F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 774075761DC4F6D800AB679F;
+			remoteInfo = MineNoter;
+		};
+		774075991DC4F6D900AB679F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7740756F1DC4F6D800AB679F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 774075761DC4F6D800AB679F;
+			remoteInfo = MineNoter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		774075771DC4F6D900AB679F /* MineNoter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineNoter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7740757A1DC4F6D900AB679F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7740757C1DC4F6D900AB679F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		7740757E1DC4F6D900AB679F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		774075811DC4F6D900AB679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		774075831DC4F6D900AB679F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		774075861DC4F6D900AB679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		774075881DC4F6D900AB679F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7740758D1DC4F6D900AB679F /* MineNoterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineNoterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		774075911DC4F6D900AB679F /* MineNoterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineNoterTests.swift; sourceTree = "<group>"; };
+		774075931DC4F6D900AB679F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774075981DC4F6D900AB679F /* MineNoterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineNoterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7740759C1DC4F6D900AB679F /* MineNoterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineNoterUITests.swift; sourceTree = "<group>"; };
+		7740759E1DC4F6D900AB679F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		774075741DC4F6D800AB679F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7740758A1DC4F6D900AB679F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774075951DC4F6D900AB679F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7740756E1DC4F6D800AB679F = {
+			isa = PBXGroup;
+			children = (
+				774075791DC4F6D900AB679F /* MineNoter */,
+				774075901DC4F6D900AB679F /* MineNoterTests */,
+				7740759B1DC4F6D900AB679F /* MineNoterUITests */,
+				774075781DC4F6D900AB679F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		774075781DC4F6D900AB679F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				774075771DC4F6D900AB679F /* MineNoter.app */,
+				7740758D1DC4F6D900AB679F /* MineNoterTests.xctest */,
+				774075981DC4F6D900AB679F /* MineNoterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		774075791DC4F6D900AB679F /* MineNoter */ = {
+			isa = PBXGroup;
+			children = (
+				7740757A1DC4F6D900AB679F /* AppDelegate.swift */,
+				7740757C1DC4F6D900AB679F /* MasterViewController.swift */,
+				7740757E1DC4F6D900AB679F /* DetailViewController.swift */,
+				774075801DC4F6D900AB679F /* Main.storyboard */,
+				774075831DC4F6D900AB679F /* Assets.xcassets */,
+				774075851DC4F6D900AB679F /* LaunchScreen.storyboard */,
+				774075881DC4F6D900AB679F /* Info.plist */,
+			);
+			path = MineNoter;
+			sourceTree = "<group>";
+		};
+		774075901DC4F6D900AB679F /* MineNoterTests */ = {
+			isa = PBXGroup;
+			children = (
+				774075911DC4F6D900AB679F /* MineNoterTests.swift */,
+				774075931DC4F6D900AB679F /* Info.plist */,
+			);
+			path = MineNoterTests;
+			sourceTree = "<group>";
+		};
+		7740759B1DC4F6D900AB679F /* MineNoterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7740759C1DC4F6D900AB679F /* MineNoterUITests.swift */,
+				7740759E1DC4F6D900AB679F /* Info.plist */,
+			);
+			path = MineNoterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		774075761DC4F6D800AB679F /* MineNoter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774075A11DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoter" */;
+			buildPhases = (
+				774075731DC4F6D800AB679F /* Sources */,
+				774075741DC4F6D800AB679F /* Frameworks */,
+				774075751DC4F6D800AB679F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MineNoter;
+			productName = MineNoter;
+			productReference = 774075771DC4F6D900AB679F /* MineNoter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7740758C1DC4F6D900AB679F /* MineNoterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774075A41DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoterTests" */;
+			buildPhases = (
+				774075891DC4F6D900AB679F /* Sources */,
+				7740758A1DC4F6D900AB679F /* Frameworks */,
+				7740758B1DC4F6D900AB679F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7740758F1DC4F6D900AB679F /* PBXTargetDependency */,
+			);
+			name = MineNoterTests;
+			productName = MineNoterTests;
+			productReference = 7740758D1DC4F6D900AB679F /* MineNoterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		774075971DC4F6D900AB679F /* MineNoterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774075A71DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoterUITests" */;
+			buildPhases = (
+				774075941DC4F6D900AB679F /* Sources */,
+				774075951DC4F6D900AB679F /* Frameworks */,
+				774075961DC4F6D900AB679F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7740759A1DC4F6D900AB679F /* PBXTargetDependency */,
+			);
+			name = MineNoterUITests;
+			productName = MineNoterUITests;
+			productReference = 774075981DC4F6D900AB679F /* MineNoterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7740756F1DC4F6D800AB679F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Mads Peter Emborg";
+				TargetAttributes = {
+					774075761DC4F6D800AB679F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R8Q2358F99;
+						ProvisioningStyle = Automatic;
+					};
+					7740758C1DC4F6D900AB679F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R8Q2358F99;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 774075761DC4F6D800AB679F;
+					};
+					774075971DC4F6D900AB679F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R8Q2358F99;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 774075761DC4F6D800AB679F;
+					};
+				};
+			};
+			buildConfigurationList = 774075721DC4F6D800AB679F /* Build configuration list for PBXProject "MineNoter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7740756E1DC4F6D800AB679F;
+			productRefGroup = 774075781DC4F6D900AB679F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				774075761DC4F6D800AB679F /* MineNoter */,
+				7740758C1DC4F6D900AB679F /* MineNoterTests */,
+				774075971DC4F6D900AB679F /* MineNoterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		774075751DC4F6D800AB679F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774075871DC4F6D900AB679F /* LaunchScreen.storyboard in Resources */,
+				774075841DC4F6D900AB679F /* Assets.xcassets in Resources */,
+				774075821DC4F6D900AB679F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7740758B1DC4F6D900AB679F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774075961DC4F6D900AB679F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		774075731DC4F6D800AB679F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7740757F1DC4F6D900AB679F /* DetailViewController.swift in Sources */,
+				7740757D1DC4F6D900AB679F /* MasterViewController.swift in Sources */,
+				7740757B1DC4F6D900AB679F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774075891DC4F6D900AB679F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774075921DC4F6D900AB679F /* MineNoterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		774075941DC4F6D900AB679F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7740759D1DC4F6D900AB679F /* MineNoterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7740758F1DC4F6D900AB679F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 774075761DC4F6D800AB679F /* MineNoter */;
+			targetProxy = 7740758E1DC4F6D900AB679F /* PBXContainerItemProxy */;
+		};
+		7740759A1DC4F6D900AB679F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 774075761DC4F6D800AB679F /* MineNoter */;
+			targetProxy = 774075991DC4F6D900AB679F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		774075801DC4F6D900AB679F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				774075811DC4F6D900AB679F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		774075851DC4F6D900AB679F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				774075861DC4F6D900AB679F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7740759F1DC4F6D900AB679F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		774075A01DC4F6D900AB679F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		774075A21DC4F6D900AB679F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R8Q2358F99;
+				INFOPLIST_FILE = MineNoter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.embo.madspeter.MineNoter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		774075A31DC4F6D900AB679F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R8Q2358F99;
+				INFOPLIST_FILE = MineNoter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.embo.madspeter.MineNoter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		774075A51DC4F6D900AB679F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R8Q2358F99;
+				INFOPLIST_FILE = MineNoterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.embo.madspeter.MineNoterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MineNoter.app/MineNoter";
+			};
+			name = Debug;
+		};
+		774075A61DC4F6D900AB679F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R8Q2358F99;
+				INFOPLIST_FILE = MineNoterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.embo.madspeter.MineNoterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MineNoter.app/MineNoter";
+			};
+			name = Release;
+		};
+		774075A81DC4F6D900AB679F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R8Q2358F99;
+				INFOPLIST_FILE = MineNoterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.embo.madspeter.MineNoterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MineNoter;
+			};
+			name = Debug;
+		};
+		774075A91DC4F6D900AB679F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R8Q2358F99;
+				INFOPLIST_FILE = MineNoterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.embo.madspeter.MineNoterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MineNoter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		774075721DC4F6D800AB679F /* Build configuration list for PBXProject "MineNoter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7740759F1DC4F6D900AB679F /* Debug */,
+				774075A01DC4F6D900AB679F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		774075A11DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774075A21DC4F6D900AB679F /* Debug */,
+				774075A31DC4F6D900AB679F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		774075A41DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774075A51DC4F6D900AB679F /* Debug */,
+				774075A61DC4F6D900AB679F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		774075A71DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774075A81DC4F6D900AB679F /* Debug */,
+				774075A91DC4F6D900AB679F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7740756F1DC4F6D800AB679F /* Project object */;
+}
