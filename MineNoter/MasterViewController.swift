@@ -8,8 +8,11 @@
 
 import UIKit
 
+var returnFromDetail = 0;
+
 class MasterViewController: UITableViewController {
 
+    let emne = Emne(heading: "", timeStamp: NSDate(), noteText: "", photo1: NSData(), photoText1: "", photo2: NSData(), photoText2: "", photo3: NSData(), photoText3: "", pointer: 0)
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
 
@@ -17,6 +20,8 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        emne.load()
+        
         self.navigationItem.leftBarButtonItem = self.editButtonItem
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
@@ -30,6 +35,11 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
+        if(returnFromDetail == 1){
+            emne.save()
+            tableView.reloadData()
+            returnFromDetail = 0
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +48,8 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
+        let nytEmne = Emne(heading:"Nyt emne", timeStamp: NSDate(), noteText: "", photo1: NSData(), photoText1: "", photo2: NSData(), photoText2: "", photo3: NSData(), photoText3: "", pointer: 0);
+        emner.insert(nytEmne, at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         self.tableView.insertRows(at: [indexPath], with: .automatic)
     }
@@ -48,9 +59,10 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                currentIndex = indexPath.row
+            //    let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
+            //    controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -64,14 +76,16 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return emner.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        cell.textLabel!.text = emner[indexPath.row].heading
+        cell.detailTextLabel!.text = emner[indexPath.row].timeStamp.description
+      //  let object = objects[indexPath.row] as! NSDate
+      //  cell.textLabel!.text = object.description
         return cell
     }
 
@@ -82,7 +96,8 @@ class MasterViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
+//            objects.remove(at: indexPath.row)
+            emner.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.

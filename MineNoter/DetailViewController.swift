@@ -8,17 +8,29 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UITableViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+  //  @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
+    @IBOutlet weak var timeStampLabel: UILabel!
+    @IBOutlet weak var headingText: UITextField!
+    @IBOutlet weak var noteText: UITextView!
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
+//        if let detail = self.detailItem {
+//            if let label = self.detailDescriptionLabel {
+//                label.text = detail.description
+//            }
+//        }
+        if let label = self.timeStampLabel {
+            label.text = emner[currentIndex].timeStamp.description
+        }
+        if let label = self.headingText {
+            label.text = emner[currentIndex].heading
+        }
+        if let label = self.noteText {
+            label.text = emner[currentIndex].noteText
         }
     }
 
@@ -38,6 +50,14 @@ class DetailViewController: UIViewController {
             // Update the view.
             self.configureView()
         }
+    }
+    
+    override func viewWillDisappear( _ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        emner[currentIndex].heading = self.headingText.text!
+        emner[currentIndex].noteText = self.noteText.text!
+        returnFromDetail = 1;
     }
 
 

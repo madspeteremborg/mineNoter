@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77189BC91DC7D69B0057E22C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77189BC81DC7D69B0057E22C /* PhotoViewController.swift */; };
+		77189BCB1DC7DC680057E22C /* Emne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77189BCA1DC7DC680057E22C /* Emne.swift */; };
 		7740757B1DC4F6D900AB679F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740757A1DC4F6D900AB679F /* AppDelegate.swift */; };
 		7740757D1DC4F6D900AB679F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740757C1DC4F6D900AB679F /* MasterViewController.swift */; };
 		7740757F1DC4F6D900AB679F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740757E1DC4F6D900AB679F /* DetailViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77189BC81DC7D69B0057E22C /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		77189BCA1DC7DC680057E22C /* Emne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Emne.swift; path = ../../../../Downloads/Emne.swift; sourceTree = "<group>"; };
 		774075771DC4F6D900AB679F /* MineNoter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineNoter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7740757A1DC4F6D900AB679F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7740757C1DC4F6D900AB679F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				7740757A1DC4F6D900AB679F /* AppDelegate.swift */,
 				7740757C1DC4F6D900AB679F /* MasterViewController.swift */,
 				7740757E1DC4F6D900AB679F /* DetailViewController.swift */,
+				77189BC81DC7D69B0057E22C /* PhotoViewController.swift */,
+				77189BCA1DC7DC680057E22C /* Emne.swift */,
 				774075801DC4F6D900AB679F /* Main.storyboard */,
 				774075831DC4F6D900AB679F /* Assets.xcassets */,
 				774075851DC4F6D900AB679F /* LaunchScreen.storyboard */,
@@ -265,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77189BCB1DC7DC680057E22C /* Emne.swift in Sources */,
 				7740757F1DC4F6D900AB679F /* DetailViewController.swift in Sources */,
+				77189BC91DC7D69B0057E22C /* PhotoViewController.swift in Sources */,
 				7740757D1DC4F6D900AB679F /* MasterViewController.swift in Sources */,
 				7740757B1DC4F6D900AB679F /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +524,7 @@
 				774075A31DC4F6D900AB679F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774075A41DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoterTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				774075A61DC4F6D900AB679F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		774075A71DC4F6D900AB679F /* Build configuration list for PBXNativeTarget "MineNoterUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				774075A91DC4F6D900AB679F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
