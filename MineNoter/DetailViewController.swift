@@ -148,6 +148,18 @@ class DetailViewController: UITableViewController, UIImagePickerControllerDelega
         }
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VisPhoto1" {
+            didPhoto = 1
+        }
+        if segue.identifier == "VisPhoto2" {
+            didPhoto = 2
+        }
+        if segue.identifier == "VisPhoto3" {
+            didPhoto = 3
+        }
+    }
 
 }
 

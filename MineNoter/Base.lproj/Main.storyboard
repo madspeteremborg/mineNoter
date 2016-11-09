@@ -396,6 +396,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myPhoto" destination="Eoc-9l-laV" id="XwH-Jd-jjU"/>
+                        <outlet property="myPhotoText" destination="7Pb-u9-B09" id="BxD-bq-fEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="471-JJ-ucg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
